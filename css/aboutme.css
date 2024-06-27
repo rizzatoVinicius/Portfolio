@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+:root{
+    --font: "Truculenta", sans-serif;
+    --bg-color: #0D141B;
+    --bg-color-2: #2A2D34;
+    --font-color: #EEF8FC;
+    --font-color-2: #BE8405; 
+    --font-color-3: #959BB1;
+    --font-size: 24px;
+    --logo-size: 48px;
+    --font-size-mob: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #about-me{
+        display: flex;
+        margin: 10em 0 0 0 ;
+    }
+
+    #container__about-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #container__about-me__title{
+        text-align: center;
+
+    }
+
+    #about-me__title{
+        font-family: var(--font);
+        color: var(--font-color-2);
+        font-size: var(--font-size-mob);
+        text-transform: uppercase;
+    }
+
+    .about-me__text{
+        font-family: var(--font);
+        color: var(--font-color-3);
+        font-size: var(--font-size);
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #about-me{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 15em 3em;
+    }
+
+    #container__about-me{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 7em 4em 0 7em;
+    }
+
+    #container__about-me__title{
+        text-align: start;
+        margin: 0 0 2em 0;
+    }
+
+    #about-me__title{
+        font-family: var(--font);
+        color: var(--font-color-2);
+        font-size: var(--logo-size);
+        text-transform: uppercase;
+    }
+
+    #container__about-me__text{
+        background-color: var(--bg-color-2);
+        padding: 1em;
+    }
+
+    .about-me__text{
+        font-family: var(--font);
+        color: var(--font-color-3);
+        font-size: var(--font-size);
+    }
+}
