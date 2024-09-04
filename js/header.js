@@ -15,6 +15,6 @@ abriMenu.addEventListener("click", function(){
 
 list.addEventListener("click", function(){
         list.classList.toggle("list__active")
-        document.body.style.overflow = ""
+        document.body.style.overflow = "visible"
 })
 
